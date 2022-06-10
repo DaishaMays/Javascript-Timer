@@ -50,6 +50,7 @@ const countdown = () => {
 
 };
 
-countdown();
+// use set interval to update the count. The set interval function will run the countdown function every second.
+setInterval(countdown, 1000);
 
 
