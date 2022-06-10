@@ -42,6 +42,12 @@ const countdown = () => {
     const textSeconds = Math.floor((gap % minute) / second);
     console.log(textSeconds)
 
+    // Change the HTML text
+    document.querySelector('.day').innerText = textDay;
+    document.querySelector('.hour').innerText = textHour;
+    document.querySelector('.minute').innerText = textMinutes;
+    document.querySelector('.second').innerText = textSeconds;
+
 };
 
 countdown();
